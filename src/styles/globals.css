@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  /* MixoMarket Cinematic Dark Palette */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #141414;
+  --bg-elevated: #1C1C1E;
+  --bg-surface: #262626;
+
+  /* Copper / Vibrant Orange Accents */
+  --accent-copper: #D4740A;
+  --accent-copper-hover: #E8881E;
+  --accent-copper-light: #F6A23D;
+  --accent-subtle: rgba(212, 116, 10, 0.15);
+  --accent-glow: rgba(212, 116, 10, 0.35);
+
+  /* Text & Foreground */
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
+  --text-muted: #737373;
+  --text-inverse: #0A0A0A;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: #D4740A;
+}
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-dropdown {
+  background: rgba(28, 28, 30, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+}
+
+.copper-gradient {
+  background: linear-gradient(135deg, #D4740A 0%, #E8881E 50%, #B87333 100%);
+}
+
+.copper-glow {
+  box-shadow: 0 0 25px rgba(212, 116, 10, 0.25);
+}
+
+.copper-border-glow:hover {
+  border-color: #D4740A;
+  box-shadow: 0 0 15px rgba(212, 116, 10, 0.3);
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4740A;
+}
